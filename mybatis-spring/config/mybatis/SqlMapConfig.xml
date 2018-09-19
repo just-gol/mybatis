@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--配置pojo别名  -->
+	<typeAliases>
+		<!--扫描包的形式创建别名,别名就是类名,不区分大小写  -->
+		<package name="cn.itcast.mybatis.po"/>
+	</typeAliases>
+	
+	<!--加载mapper文件  -->
+	<mappers>
+		<!--resource基于classpath查找  -->
+		<mapper resource="sqlmap/user.xml"/>
+		
+	</mappers>
+</configuration>
